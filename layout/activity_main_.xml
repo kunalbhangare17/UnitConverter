@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.hp.unitconverter.Main_Activity"
+
+        >
+
+        //Textview and ImageView for Algebra.
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/algebra"
+            android:id="@+id/imageView"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:onClick="algebra"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" MATHS"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:textStyle="bold"
+            android:id="@+id/textView12" />
+
+        //Textview and ImageView for Geometry.
+
+        //Textview and ImageView for Engineering.
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/engineering"
+            android:id="@+id/imageView3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="200dp"
+            android:onClick="engineering"/>
+
+        //Textview and ImageView for Units.
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        UNITS"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView4"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView8"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        CURRENCY"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView10"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/imageView5"
+            android:layout_alignRight="@+id/imageView5"
+            android:layout_alignEnd="@+id/imageView5"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/units"
+            android:layout_marginLeft="41dp"
+            android:id="@+id/imageView4"
+            android:onClick="units"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_marginStart="41dp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/currency"
+            android:id="@+id/imageView5"
+            android:layout_marginLeft="18dp"
+            android:onClick="currency"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENGINEERING"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView9"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/textView10"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_alignEnd="@+id/imageView3" />
+
+    </RelativeLayout>
+
+</ScrollView>

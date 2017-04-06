@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.unitconverter.AverageActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="22dp">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:hint="num"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/den1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/num1"
+            android:layout_below="@+id/num1"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="den"
+            android:inputType="numberDecimal"
+            android:layout_alignLeft="@+id/num1" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="num"
+            android:inputType="numberDecimal"
+            android:layout_marginStart="70dp"
+            android:layout_alignBaseline="@+id/num1"
+            android:layout_alignBottom="@+id/num1"
+            android:layout_toEndOf="@+id/num1"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/num1" />
+
+        <EditText
+            android:id="@+id/den2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/den1"
+            android:layout_alignBottom="@+id/den1"
+            android:layout_alignStart="@+id/num2"
+            android:ems="10"
+            android:hint="den"
+            android:inputType="numberDecimal"
+            android:layout_alignLeft="@+id/num2" />
+
+        <Button
+            android:id="@+id/prop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_below="@+id/den1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="117dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="47dp" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

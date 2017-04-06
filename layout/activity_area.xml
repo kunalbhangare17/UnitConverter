@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F1"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_acceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="com.example.hp.unitconverter.AccelerationActivity">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="m²"
+            android:background="#FBFCFC"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="560dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/meter_Square_text_box"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="cm²"
+            android:background="#FBFCFC"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/CenterMeter_text_box"
+            android:inputType="number"/>
+
+        <TextView
+            android:text="m²:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/meterSpuareConversion"
+            android:layout_toRightOf="@+id/meterSpuareConversion"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/to_foot_in_meter" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Km²"
+            android:background="#FBFCFC"
+            android:padding="20dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Kilometer_text_box"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/foot_spuare_text_box"
+            android:layout_alignStart="@+id/foot_spuare_text_box" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="mm²"
+            android:background="#FBFCFC"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="790dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="50dp"
+            android:inputType="number"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/foot_spuare_text_box"
+            android:layout_alignStart="@+id/foot_spuare_text_box"
+            android:id="@+id/MiliMeter_text_box" />
+
+        <TextView
+            android:text="m²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/meter_in_kilometer"
+            android:layout_alignBaseline="@+id/Kilometer_text_box"
+            android:layout_alignBottom="@+id/Kilometer_text_box"
+            android:layout_toRightOf="@+id/MiliMeter_text_box"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            />
+
+        <TextView
+            android:text="mm²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/MiliMeter_in_Kilometer"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/meter_in_kilometer"
+            android:layout_alignLeft="@+id/meter_in_kilometer"
+            android:layout_alignStart="@+id/meter_in_kilometer" />
+
+        <TextView
+            android:text="km²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Kilometer_in_centemeter"
+            android:layout_alignTop="@+id/CenterMeter_text_box"
+            android:layout_alignLeft="@+id/MiliMeter_in_meter"
+            android:layout_alignStart="@+id/MiliMeter_in_meter" />
+
+        <TextView
+            android:text="mm²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/MiliMeter_in_centemeter"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/CenterMeter_text_box"
+            android:layout_alignLeft="@+id/Kilometer_in_centemeter"
+            android:layout_alignStart="@+id/Kilometer_in_centemeter" />
+
+        <TextView
+            android:text="km²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Kilometer_in_milimeter"
+            android:layout_alignBaseline="@+id/MiliMeter_text_box"
+            android:layout_alignBottom="@+id/MiliMeter_text_box"
+            android:layout_alignLeft="@+id/MiliMeter_in_centemeter"
+            android:layout_alignStart="@+id/MiliMeter_in_centemeter" />
+
+        <TextView
+            android:text="km²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Kilometer_in_meter"
+            android:layout_alignTop="@+id/meter_Square_text_box"
+            android:layout_alignLeft="@+id/MiliMeter_in_Kilometer"
+            android:layout_alignStart="@+id/MiliMeter_in_Kilometer" />
+
+        <TextView
+            android:text="m²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/meter_in_milimeter"
+            android:layout_below="@+id/CenteMeter_in_milimeter"
+            android:layout_alignLeft="@+id/CenteMeter_in_meter"
+            android:layout_alignStart="@+id/CenteMeter_in_meter"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:text="cm²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/CenteMeter_in_milimeter"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Kilometer_in_milimeter"
+            android:layout_alignLeft="@+id/Kilometer_in_milimeter"
+            android:layout_alignStart="@+id/Kilometer_in_milimeter" />
+
+        <TextView
+            android:text="mm²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/MiliMeter_in_meter"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/CenteMeter_in_meter"
+            android:layout_alignLeft="@+id/Kilometer_in_meter"
+            android:layout_alignStart="@+id/Kilometer_in_meter" />
+
+        <TextView
+            android:text="cm²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/CenteMeter_in_meter"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/meter_Square_text_box"
+            android:layout_alignLeft="@+id/MiliMeter_in_meter"
+            android:layout_alignStart="@+id/MiliMeter_in_meter" />
+
+        <TextView
+            android:text="m²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/meter_in_centemeter"
+            android:layout_below="@+id/MiliMeter_in_centemeter"
+            android:layout_alignLeft="@+id/MiliMeter_in_centemeter"
+            android:layout_alignStart="@+id/MiliMeter_in_centemeter" />
+
+        <TextView
+            android:text="cm²:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/centerMeter_in_kilometer"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/MiliMeter_in_Kilometer"
+            android:layout_alignLeft="@+id/MiliMeter_in_Kilometer"
+            android:layout_alignStart="@+id/MiliMeter_in_Kilometer" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

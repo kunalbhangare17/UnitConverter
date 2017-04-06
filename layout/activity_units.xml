@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F1"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_units"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.hp.unitconverter.UnitsActivity">
+
+        //Textview and ImageView for Acceleration.
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/dedf6d4a563ace0897f5cb3779a93227"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageView7"
+            android:onClick="accelerationOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acceleration"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView7"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView" />
+
+        //Textview and ImageView for Area.
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/area"
+            android:layout_toRightOf="@+id/imageView7"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageView8"
+            android:onClick="areaOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView8"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        //Textview and ImageView for Length.
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/length"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="200dp"
+            android:id="@+id/imageView9"
+            android:onClick="lengthOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView9"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        //Textview and ImageView for Force.
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/force"
+            android:layout_toRightOf="@+id/imageView7"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="200dp"
+            android:id="@+id/imageView10"
+            android:onClick="forceOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Force"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView10"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        //Textview and ImageView for Speed.
+
+        //Textview and ImageView for Time.
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/time"
+            android:layout_toRightOf="@+id/imageView7"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="380dp"
+            android:id="@+id/imageView12"
+            android:onClick="timeOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView12"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        //Textview and ImageView for Temperature.
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView13"
+            android:textSize="20dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/temperature"
+            android:id="@+id/imageView13"
+            android:onClick="temperatureOpen"
+            android:layout_alignTop="@+id/imageView12"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+
+        //Textview and ImageView for Volume.
+
+    </RelativeLayout>
+
+</ScrollView>

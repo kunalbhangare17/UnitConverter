@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F1"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_algebra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.hp.unitconverter.MathsActivity">
+
+        //Textview and ImageView for Percentage.
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/ohmslaw"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageView5"
+            android:onClick="ohmsLawOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ohms Law"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView5"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        //Textview and ImageView for Average.
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/distance"
+            android:layout_toRightOf="@+id/imageView5"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/algebraView"
+            android:onClick="speedDistaceOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed Distance"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/algebraView"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView16" />
+
+        //Textview and ImageView for Proportion.
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/density"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="200dp"
+            android:id="@+id/imageView6"
+            android:onClick="densityOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Density"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView6"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView19" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/percentage"
+            android:id="@+id/algebraView2"
+            android:onClick="percentage"
+            android:layout_alignTop="@+id/imageView6"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/proportion"
+            android:id="@+id/imageView7"
+            android:onClick="proportion"
+            android:layout_below="@+id/textView19"
+            android:layout_alignLeft="@+id/imageView6"
+            android:layout_alignStart="@+id/imageView6"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Percentage"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView17"
+            android:layout_above="@+id/imageView7"
+            android:layout_alignRight="@+id/algebraView"
+            android:layout_alignEnd="@+id/algebraView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Proportion"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView20"
+            android:layout_below="@+id/imageView7"
+            android:layout_alignLeft="@+id/imageView7"
+            android:layout_alignStart="@+id/imageView7"
+            android:layout_marginBottom="100dp"/>
+
+        //Textview and ImageView for Proportion.
+
+    </RelativeLayout>
+
+</ScrollView>
+

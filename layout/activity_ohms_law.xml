@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.unitconverter.AverageActivity">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            app:srcCompat="@drawable/ohms" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="12dp"
+            android:text="P ="
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:layout_alignLeft="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Time"
+            android:layout_alignStart="@+id/textView4"
+            android:text="R ="
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:layout_alignLeft="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I ="
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:layout_above="@+id/Time"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="32dp"
+            android:text="V ="
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:layout_alignLeft="@+id/imageView3" />
+
+        <EditText
+            android:id="@+id/Density"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="in Volts"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/Speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Density"
+            android:layout_below="@+id/Density"
+            android:ems="10"
+            android:hint="in Amps"
+            android:inputType="numberDecimal"
+            android:layout_alignLeft="@+id/Density" />
+
+        <EditText
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Speed"
+            android:layout_below="@+id/Speed"
+            android:ems="10"
+            android:hint="in Ohms"
+            android:inputType="numberDecimal"
+            android:layout_alignLeft="@+id/Speed" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:text="Calculate" />
+
+        <EditText
+            android:id="@+id/Power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Time"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Power"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

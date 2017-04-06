@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.unitconverter.AverageActivity">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Time"
+            android:layout_alignBottom="@+id/Time"
+            android:layout_alignStart="@+id/textView14"
+            android:text="V ="
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="218dp"
+            android:layout_alignLeft="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Speed"
+            android:layout_alignBottom="@+id/Speed"
+            android:layout_marginEnd="19dp"
+            android:layout_toStartOf="@+id/Speed"
+            android:text="m ="
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="218dp"
+            android:layout_marginRight="19dp"
+            android:layout_toLeftOf="@+id/Speed" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Distance"
+            android:layout_alignBottom="@+id/Distance"
+            android:layout_alignStart="@+id/textView12"
+            android:text="P ="
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="218dp"
+            android:layout_alignLeft="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="48dp"
+            android:text="P ="
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="76dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:text="m\nV"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignEnd="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_alignRight="@+id/textView7"
+            android:layout_alignLeft="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/Distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView7"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="104dp"
+            android:ems="10"
+            android:hint="in g/cm^3"
+            android:inputType="numberDecimal"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_marginLeft="21dp" />
+
+        <EditText
+            android:id="@+id/Speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Distance"
+            android:layout_below="@+id/Distance"
+            android:ems="10"
+            android:hint="in grams"
+            android:inputType="numberDecimal"
+            android:layout_alignLeft="@+id/Distance" />
+
+        <EditText
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Speed"
+            android:layout_below="@+id/Speed"
+            android:ems="10"
+            android:hint="in cm^3"
+            android:inputType="numberDecimal"
+            android:layout_alignLeft="@+id/Speed" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:text="Calculate" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

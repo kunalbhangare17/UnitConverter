@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F1"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_acceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="com.example.hp.unitconverter.AccelerationActivity">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Kgf"
+            android:background="#FBFCFC"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/Kgf_text_box"
+            android:inputType="number"/>
+
+        <TextView
+            android:text="m²:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/meterSpuareConversion"
+            android:layout_toRightOf="@+id/meterSpuareConversion"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/to_foot_in_meter" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Newton"
+            android:background="#FBFCFC"
+            android:padding="20dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Newton_text_box"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/foot_spuare_text_box"
+            android:layout_alignStart="@+id/foot_spuare_text_box" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Gf"
+            android:background="#FBFCFC"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="840dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="50dp"
+            android:inputType="number"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/foot_spuare_text_box"
+            android:layout_alignStart="@+id/foot_spuare_text_box"
+            android:id="@+id/gf_text_box" />
+
+        <TextView
+            android:text="Kgf:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/kgf_in_Newton"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/dyne_in_newton"
+            android:layout_alignLeft="@+id/dyne_in_newton"
+            android:layout_alignStart="@+id/dyne_in_newton" />
+
+        <TextView
+            android:text="Kgf:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Kgf_in_Gf"
+            android:layout_below="@+id/Dyne_in_Gf"
+            android:layout_alignLeft="@+id/Dyne_in_Kgf"
+            android:layout_alignStart="@+id/Dyne_in_Kgf"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:text="Dyne:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Dyne_in_Gf"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Newton_in_Gf"
+            android:layout_alignLeft="@+id/Newton_in_Gf"
+            android:layout_alignStart="@+id/Newton_in_Gf" />
+
+        <TextView
+            android:text="Gf:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Gf_in_Kgf"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Dyne_in_Kgf"
+            android:layout_alignLeft="@+id/Newton_in_Kgf"
+            android:layout_alignStart="@+id/Newton_in_Kgf" />
+
+        <TextView
+            android:text="Dyne:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Dyne_in_Kgf"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Kgf_text_box"
+            android:layout_alignLeft="@+id/Gf_in_Kgf"
+            android:layout_alignStart="@+id/Gf_in_Kgf" />
+
+        <TextView
+            android:text="Gf:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/gf_in_Dyne"
+            android:layout_below="@+id/kgf_in_Dyne"
+            android:layout_alignLeft="@+id/kgf_in_Dyne"
+            android:layout_alignStart="@+id/kgf_in_Dyne" />
+
+        <TextView
+            android:text="Gf:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/gf_in_Newton"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/kgf_in_Newton"
+            android:layout_alignLeft="@+id/kgf_in_Newton"
+            android:layout_alignStart="@+id/kgf_in_Newton" />
+
+        <TextView
+            android:text="Newton:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Newton_in_Dyne"
+            android:layout_alignTop="@+id/Dyne_text_box"
+            android:layout_alignLeft="@+id/gf_in_Newton"
+            android:layout_alignStart="@+id/gf_in_Newton" />
+
+        <TextView
+            android:text="Newton:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Newton_in_Gf"
+            android:layout_alignBaseline="@+id/gf_text_box"
+            android:layout_alignBottom="@+id/gf_text_box"
+            android:layout_toRightOf="@+id/Kgf_text_box"
+            android:layout_toEndOf="@+id/Kgf_text_box"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp" />
+
+        <TextView
+            android:text="Dyne:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/dyne_in_newton"
+            android:layout_alignBaseline="@+id/Newton_text_box"
+            android:layout_alignBottom="@+id/Newton_text_box"
+            android:layout_alignLeft="@+id/Newton_in_Gf"
+            android:layout_alignStart="@+id/Newton_in_Gf" />
+
+        <TextView
+            android:text="Newton:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/Newton_in_Kgf"
+            android:layout_alignTop="@+id/Kgf_text_box"
+            android:layout_alignLeft="@+id/gf_in_Dyne"
+            android:layout_alignStart="@+id/gf_in_Dyne" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Dyne"
+            android:background="#FBFCFC"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="60dp"
+            android:id="@+id/Dyne_text_box"
+            android:inputType="number"
+            android:layout_below="@+id/gf_in_Newton"
+            android:layout_alignLeft="@+id/Newton_text_box"
+            android:layout_alignStart="@+id/Newton_text_box" />
+
+        <TextView
+            android:text="Kgf:"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/kgf_in_Dyne"
+            android:layout_below="@+id/Dyne_text_box"
+            android:layout_toRightOf="@+id/Newton_text_box"
+            android:layout_toEndOf="@+id/Newton_text_box" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+

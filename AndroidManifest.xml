@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.unitconverter">
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main_Activity" />
+        <activity android:name=".MathsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Activity" />
+        </activity>
+        <activity android:name=".EngineeringActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Activity" />
+        </activity>
+        <activity android:name=".UnitsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Activity" />
+        </activity>
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".PercentageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".AverageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".ProportionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".DecimalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".AccelerationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UnitsActivity" />
+        </activity>
+        <activity android:name=".AreaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UnitsActivity" />
+        </activity>
+        <activity android:name=".LengthActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UnitsActivity" />
+        </activity>
+        <activity android:name=".ForceActitvity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UnitsActivity" />
+        </activity>
+        <activity android:name=".TimeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UnitsActivity" />
+        </activity>
+        <activity android:name=".TemperatureActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UnitsActivity" />
+        </activity>
+        <activity android:name=".VolumeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UnitsActivity" />
+        </activity>
+        <activity android:name=".OhmsLawActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EngineeringActivity" />
+        </activity>
+        <activity android:name=".SqeedDistanceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EngineeringActivity" />
+        </activity>
+        <activity android:name=".DensityActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EngineeringActivity" />
+        </activity>
+        <activity android:name=".CurrencyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Activity" />
+        </activity>
+        <activity android:name=".CircleActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".CylinderActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".SphereActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".SquareActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".RectangeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".TriangleActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".EquiTriangleActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".IsoTriangleActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".CubeActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MathsActivity" />
+        </activity>
+        <activity android:name=".PythogorousActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MathsActivity" />
+        </activity>
+    </application>
+
+</manifest>

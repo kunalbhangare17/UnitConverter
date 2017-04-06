@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F1"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_acceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="com.example.hp.unitconverter.AccelerationActivity">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:hint="     F° "
+            android:background="#FBFCFC"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/F_text_box"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:hint=" Kelvin  "
+            android:background="#FBFCFC"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="445dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/kelvin_text_box"
+            android:inputType="number"/>
+
+        <TextView
+            android:text="F° :"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/celsius_text_box"
+            android:layout_toRightOf="@+id/celsius_text_box"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/fInC" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:hint="    C°    "
+            android:background="#FBFCFC"
+            android:padding="20dp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/celsius_text_box"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/F_text_box"
+            android:layout_alignStart="@+id/F_text_box"
+            android:inputType="number" />
+
+        <TextView
+            android:text="F° :"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/fInKelvin"
+            android:layout_below="@+id/cInKelvin"
+            android:layout_alignLeft="@+id/cInKelvin"
+            android:layout_alignStart="@+id/cInKelvin"
+            android:layout_alignRight="@+id/cInKelvin"
+            android:layout_alignEnd="@+id/cInKelvin" />
+
+        <TextView
+            android:text="Kelvin:"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:padding="20dp"
+            android:id="@+id/kelvinInC"
+            android:layout_below="@+id/fInC"
+            android:layout_alignLeft="@+id/fInC"
+            android:layout_alignStart="@+id/fInC" />
+
+        <TextView
+            android:text="C° :"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/cInF"
+            android:layout_alignTop="@+id/F_text_box"
+            android:layout_alignLeft="@+id/kelvinInC"
+            android:layout_alignStart="@+id/kelvinInC" />
+
+        <TextView
+            android:text="Kelvin:"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/kelvinInF"
+            android:layout_below="@+id/cInF"
+            android:layout_alignLeft="@+id/cInF"
+            android:layout_alignStart="@+id/cInF" />
+
+        <TextView
+            android:text="C° :"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17dp"
+            android:id="@+id/cInKelvin"
+            android:layout_alignTop="@+id/kelvin_text_box"
+            android:layout_alignLeft="@+id/kelvinInF"
+            android:layout_alignStart="@+id/kelvinInF" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
